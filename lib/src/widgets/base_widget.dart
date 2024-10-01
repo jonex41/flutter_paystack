@@ -40,7 +40,7 @@ abstract class BaseState<T extends StatefulWidget> extends State<T> {
             content: text,
             actions: <Widget>[
               new CupertinoDialogAction(
-                child: const Text('Yes'),
+                child: const Text('Yes' , style:TextStyle(color: Color(0xFF0F57C5))),
                 isDestructiveAction: true,
                 onPressed: () {
                   Navigator.pop(context, true); // Returning true to
@@ -48,7 +48,7 @@ abstract class BaseState<T extends StatefulWidget> extends State<T> {
                 },
               ),
               new CupertinoDialogAction(
-                child: const Text('No'),
+                child: const Text('No', style:TextStyle(color:Color(0xffDC3545))),
                 isDefaultAction: true,
                 onPressed: () {
                   Navigator.pop(context,
@@ -61,13 +61,13 @@ abstract class BaseState<T extends StatefulWidget> extends State<T> {
             content: text,
             actions: <Widget>[
               new TextButton(
-                  child: const Text('NO'),
+                  child: const Text('NO', style:TextStyle(color:Color(0xffDC3545))),
                   onPressed: () {
                     Navigator.of(context).pop(
                         false); // Pops the confirmation dialog but not the page.
                   }),
               new TextButton(
-                  child: const Text('YES'),
+                  child: const Text('YES' , style:TextStyle(color: Color(0xFF0F57C5))),
                   onPressed: () {
                     Navigator.of(context).pop(
                         true); // Returning true to _onWillPop will pop again.
