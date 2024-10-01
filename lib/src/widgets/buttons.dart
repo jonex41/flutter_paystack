@@ -47,7 +47,7 @@ class AccentButton extends StatelessWidget {
     return _BaseButton(
       onPressed: onPressed,
       showProgress: showProgress,
-      color: context.colorScheme().secondary,
+      color:Color(0xFF0F57C5),
       borderSide: BorderSide.none,
       textStyle: const TextStyle(
           fontSize: 14.0, color: Colors.white, fontWeight: FontWeight.bold),
