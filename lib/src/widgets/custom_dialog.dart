@@ -76,7 +76,7 @@ class CustomAlertDialog extends StatelessWidget {
                         child: new IconButton(
                           icon: new Icon(Icons.close),
                           onPressed: onCancelPress,
-                          color: Colors.black54,
+                          color: Color(0xFF0F57C5),
                           padding: const EdgeInsets.all(15.0),
                           iconSize: 30.0,
                         ),
@@ -119,6 +119,7 @@ class CustomAlertDialog extends StatelessWidget {
                         padding: const EdgeInsets.all(3.0),
                         icon: const Icon(
                           Icons.cancel,
+                           color: Color(0xFF0F57C5),
                         ),
                         onPressed: onCancelPress),
                   ),
