@@ -62,12 +62,14 @@ abstract class BaseState<T extends StatefulWidget> extends State<T> {
             actions: <Widget>[
               new TextButton(
                   child:  Text('NO', style:TextStyle(color:Color(0xffDC3545))),
+                 style: ButtonStyle(backgroundColor: MaterialStateProperty.all(Color(0xffDC3545))),
                   onPressed: () {
                     Navigator.of(context).pop(
                         false); // Pops the confirmation dialog but not the page.
                   }),
               new TextButton(
                   child:  Text('YES' , style:TextStyle(color: Color(0xFF0F57C5))),
+                 style: ButtonStyle(backgroundColor: MaterialStateProperty.all(Color(0xffDC3545))),
                   onPressed: () {
                     Navigator.of(context).pop(
                         true); // Returning true to _onWillPop will pop again.
